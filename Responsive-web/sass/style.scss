@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //list-style: none;
+  //text-decoration: none;
+}
+
+
+ body{
+   background:wheat;
+   color: magenta;
+   padding: 50px;
+ }
+
+h1,h2,h3{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+nav{
+  text-align: center;
+  ul{
+    li{
+      list-style: none;
+      display: block;
+      background: black;
+      color: magenta;
+      text-align: center;
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      padding: 10px 0px;
+      margin: 20px auto;
+    }
+    a{
+      text-decoration: none;
+      color: magenta;
+    }
+  }
+}
+
+.italianRestaurant{
+  width: 100%;
+  height: auto;
+}
+
+.banner{
+  width: 100%;
+  display: none;
+}
+
+.para{
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.imgItalian{
+  width: 100%;
+}
+
+.clearfix{
+  clear: both;
+  content: "";
+  display: block;
+}
+
+@media only screen and (min-width: 600px){
+
+  .banner{
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .imgItalian{
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .para{
+    margin-top: 30px;
+    padding-right: 50px;
+  }
+
+  nav{
+    ul{
+    li{
+      display: inline;
+      margin-right: 30px;
+    }
+    a{
+      width: 150px;
+      padding: 20px;
+    }
+  }
+}
+
+.italianRestaurant{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i}{
+    width: 100%/12 * $i;
+    float: left;
+  }
+} // end of for loop
+
+}
